@@ -48,6 +48,7 @@
     line-height: 60px;
     align-items: center;
     position: relative;
+    padding: 0 15px;
 }
 
 .logo img {
@@ -62,6 +63,7 @@ span.responsive_icon {
     position: absolute;
     right: 0;
     transform: translateX(-10px);
+    display: none;
 }
 
 span.responsive_icon a li {
@@ -226,8 +228,7 @@ nav.nav-section.active .logo .responsive_icon {
 }
 
 nav.nav-section.active .logo img {
-    /* transform: translateY(15px); */
-    margin: auto;
+    padding: 20px 0;
 }
 
 nav.nav-section.active .menu-item p span {
@@ -282,3 +283,114 @@ nav.nav-section.active .porfile-ditels {
     min-height: 100vh;
     transition: all 0.9s ease;
 }
+
+
+/* this is header section start  */
+
+
+/* this is header section  */
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    background: #1f2128;
+    width: 100%;
+}
+
+
+/* ----------------- 
+    this is header section css
+-------------------*/
+
+.header-left {
+    height: 100%;
+    min-width: 65%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    color: var(--header-color);
+    justify-content: center;
+    position: relative;
+}
+
+.header-right {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-left h2 {
+    font-size: 2.5625rem;
+    font-weight: 600;
+}
+
+.header-left h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-scrch i {
+    color: var(--header-color);
+    padding: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-scrch input[type="search"] {
+    background: none;
+    border: none;
+    padding: 6px;
+    color: #fff;
+    cursor: pointer;
+    max-width: 10rem;
+}
+
+.header-scrch ::placeholder {
+    color: var(--header-color);
+}
+
+.header-scrch {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 13px;
+    align-items: end;
+}
+
+.header-notefechation .notefechation {
+    width: 45px;
+    height: 45px;
+    background-color: #242731;
+    color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -webkit-box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.notefechation-count {
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ff754c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -15px;
+    font-size: 18px;
+    top: -5px;
+}
+
+
+/* this is header section  End  */
