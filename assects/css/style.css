@@ -100,7 +100,7 @@ span.responsive_icon a li {
 
 .menu-item .nav-list li a i {
     font-size: 1.2rem;
-    min-width: 46px;
+    min-width: 60px;
     height: 3.5rem;
     border-radius: 12px;
     display: flex;
@@ -123,11 +123,11 @@ ul.nav-list li a {
 span.roundet {
     width: 30px;
     height: 30px;
-    background: aliceblue;
+    background: #FF754C;
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
-    color: black;
+    color: #fff;
     position: absolute;
     right: 0;
     transform: translateX(-10px);
@@ -206,6 +206,7 @@ nav.nav-section.active .menu-item li span {
 nav.nav-section.active {
     width: 5rem;
     padding: 20px 10px;
+    overflow-x: hidden;
 }
 
 nav.nav-section.active .logo {
@@ -236,6 +237,34 @@ nav.nav-section.active .menu-item p span {
 .nav-section.active~.main-section {
     left: 5rem;
     width: calc(100% - 5rem);
+}
+
+nav.nav-section.active .nav-list li {
+    width: 4rem;
+    transition: all 0.8s ease;
+}
+
+nav.nav-section.active .porfile-content {
+    opacity: 0;
+}
+
+nav.nav-section.active .user-changeIcone {
+    opacity: 0;
+}
+
+nav.nav-section.active .nav-list li:hover {
+    background: #6C5DD3;
+}
+
+nav.nav-section.active .porfile-ditels {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0px);
+    height: 10rem;
+    gap: 0;
 }
 
 
