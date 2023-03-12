@@ -3,7 +3,7 @@
     --bg-color: #242731;
     --text-color: #808191;
     --primary-color: #6c5dd3;
-    --devider-color: #494949;
+    --devider-color: #373A43;
     --hover-texi-color: #fff;
     --header-color: #ffffff;
     --trans-dura: 1s;
@@ -31,12 +31,14 @@
     padding: 10px 20px;
     overflow-y: auto;
     position: fixed;
+    transition: 0.9s;
 }
 
 .responsive_icon li {
     background-color: #fff;
     height: 2px;
     width: 2rem;
+    /* opacity: 0; */
 }
 
 .logo {
@@ -69,7 +71,13 @@ span.responsive_icon a li {
 
 /* this is nav section End */
 
-.menu-item .nav-list li a {
+.menu-item p {
+    color: var(--text-color);
+    padding-left: 9%;
+    font-size: .8rem;
+}
+
+.menu-item .nav-list li {
     border-radius: 16px;
     height: 3.5rem;
     width: 13.5rem;
@@ -78,9 +86,14 @@ span.responsive_icon a li {
     align-items: center;
     border-radius: 12px;
     transition: all 0.5s ease;
+    /* opacity: 0; */
 }
 
-.menu-item .nav-list li a:hover {
+.menu-item .nav-list li:hover a {
+    color: #fff;
+}
+
+.menu-item .nav-list li:hover {
     background: var(--primary-color);
     color: var(--hover-texi-color);
 }
@@ -95,11 +108,16 @@ span.responsive_icon a li {
     align-items: center;
 }
 
+span.text.nav-text {
+    padding-left: 5px;
+}
+
 ul.nav-list li a {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: var(--text-color);
+    width: 100%;
 }
 
 span.roundet {
@@ -121,17 +139,14 @@ span.roundet {
 
 .porfile {
     width: 100%;
-    height: 60px;
-    height: 60px;
-    display: flex;
-    background: blue;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 10rem;
+    position: relative;
 }
 
 .user-changeIcone {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -151,8 +166,80 @@ span.roundet {
     /* Firefox */
 }
 
+.nav-devider {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* ------------------ */
+hr.devider {
+    border: 1px solid var(--devider-color);
+}
+
+.porfile-ditels {
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(7px);
+    gap: 15px;
+}
+
+.porfile-content .name,
+.user-changeIcone i {
+    color: #fff;
+}
+
+.porfile-content .name-ditels {
+    color: var(--text-color);
+}
+
+nav.nav-section.active .menu-item li span {
+    opacity: 0;
+}
+
+
+/* -------Active Class Start-------- */
+
+nav.nav-section.active {
+    width: 5rem;
+    padding: 20px 10px;
+}
+
+nav.nav-section.active .logo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    height: 8rem;
+}
+
+nav.nav-section.active .logo h2 {
+    display: none;
+}
+
+nav.nav-section.active .logo .responsive_icon {
+    /* transform: translateY(-42px); */
+    display: contents;
+}
+
+nav.nav-section.active .logo img {
+    /* transform: translateY(15px); */
+    margin: auto;
+}
+
+nav.nav-section.active .menu-item p span {
+    opacity: 0;
+}
+
+.nav-section.active~.main-section {
+    left: 5rem;
+    width: calc(100% - 5rem);
+}
+
+
+/*----------Active Class End------------*/
 
 
 /* main-section  */
@@ -163,4 +250,6 @@ span.roundet {
     top: 0;
     left: 16.38875rem;
     width: calc(100% - 16.38875rem);
+    min-height: 100vh;
+    transition: all 0.9s ease;
 }
