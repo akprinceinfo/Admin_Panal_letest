@@ -3,7 +3,7 @@
     --bg-color: #242731;
     --text-color: #808191;
     --primary-color: #6c5dd3;
-    --devider-color: #373A43;
+    --devider-color: #373a43;
     --hover-texi-color: #fff;
     --header-color: #ffffff;
     --trans-dura: 1s;
@@ -76,7 +76,7 @@ span.responsive_icon a li {
 .menu-item p {
     color: var(--text-color);
     padding-left: 9%;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .menu-item .nav-list li {
@@ -125,7 +125,7 @@ ul.nav-list li a {
 span.roundet {
     width: 30px;
     height: 30px;
-    background: #FF754C;
+    background: #ff754c;
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
@@ -254,7 +254,7 @@ nav.nav-section.active .user-changeIcone {
 }
 
 nav.nav-section.active .nav-list li:hover {
-    background: #6C5DD3;
+    background: #6c5dd3;
 }
 
 nav.nav-section.active .porfile-ditels {
@@ -296,6 +296,8 @@ header {
     height: 20vh;
     background: #1f2128;
     width: 100%;
+    justify-content: space-between;
+    padding: 0 30px;
 }
 
 
@@ -306,7 +308,6 @@ header {
 .header-left {
     height: 100%;
     min-width: 65%;
-    padding: 0 30px;
     display: flex;
     flex-direction: column;
     color: var(--header-color);
