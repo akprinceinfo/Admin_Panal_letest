@@ -18,13 +18,30 @@
 /* Tablets Ipads  */
 
 @media only screen and (max-width: 1024px) {
-    span.responsive_icon {
+    #toggle i {
         display: block;
+    }
+    span.responsive_icon {
+        transform: translate(28px, 5px);
     }
 }
 
 @media only screen and (max-width: 768px) {
-    header {
-        padding: 0 25px;
+    .header-left {
+        padding: 0;
+        min-width: 53%;
+    }
+    .header-left h2 {
+        font-size: 1.6rem;
+    }
+    .header-scrch {
+        gap: 8px;
+    }
+    .header-scrch input[type="search"] {
+        max-width: 7rem;
+    }
+    .header-right {
+        gap: 8px;
+        min-width: 45%;
     }
 }

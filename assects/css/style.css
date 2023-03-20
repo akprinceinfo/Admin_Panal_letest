@@ -49,6 +49,7 @@
 #toggle i {
     font-size: 45px;
     color: #fff;
+    display: none;
 }
 
 .logo img {
@@ -59,16 +60,13 @@
     color: #fff;
 }
 
-span.responsive_icon {
+
+/* span.responsive_icon {
     position: absolute;
     right: 0;
     transform: translateX(-10px);
     display: none;
-}
-
-span.responsive_icon a li {
-    margin: 10px 0px;
-}
+} */
 
 
 /* this is nav section End */
@@ -395,3 +393,17 @@ header {
 
 
 /* this is header section  End  */
+
+.roundend-position i {
+    position: relative;
+}
+
+.nav-section.active p.responsive_roundet {
+    width: 15px;
+    height: 15px;
+    background: #ff754c;
+    position: absolute;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+}
