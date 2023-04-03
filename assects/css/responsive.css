@@ -4,44 +4,108 @@
 4. Desktops max-width:1280px
 5. Huge size (Larger screen) max-width: 1281px and greater */
 
-
 /* Huge size (Larger screen)  */
 
-@media only screen and (max-width: 1281px) {}
-
+@media only screen and (max-width: 1281px) {
+}
 
 /* Desktops size  */
 
-@media only screen and (max-width: 1280px) {}
-
+@media only screen and (max-width: 1280px) {
+}
 
 /* Tablets Ipads  */
 
 @media only screen and (max-width: 1024px) {
-    #toggle i {
-        display: block;
-    }
-    span.responsive_icon {
-        transform: translate(28px, 5px);
-    }
+  #toggle i {
+    display: block;
+  }
+  span.responsive_icon {
+    transform: translate(28px, 5px);
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .header-left {
-        padding: 0;
-        min-width: 53%;
-    }
-    .header-left h2 {
-        font-size: 1.6rem;
-    }
-    .header-scrch {
-        gap: 8px;
-    }
-    .header-scrch input[type="search"] {
-        max-width: 7rem;
-    }
-    .header-right {
-        gap: 8px;
-        min-width: 45%;
-    }
+  .header {
+    padding: 15px 15px;
+  }
+  .header-left {
+    padding: 0;
+    min-width: 53%;
+  }
+  .header-left h2 {
+    font-size: 1.6rem;
+  }
+  .header-scrch {
+    gap: 8px;
+  }
+  .header-scrch input[type="search"] {
+    max-width: 7rem;
+  }
+  .header-right {
+    gap: 8px;
+    min-width: 45%;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .responsive-header {
+    display: flex;
+    background: #1f2128;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    color: #fff;
+  }
+
+  .responsive-header-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .responsive-header-right {
+    display: flex;
+    width: 37%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .responsive-header-logo {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+  .ser-icon {
+    font-size: 25px;
+  }
+
+  .notefecation {
+    font-size: 25px;
+  }
+  span.responsive_icon {
+    transform: translate(0px, 5px);
+  }
+
+  .responsive-logo {
+    display: flex;
+  }
+  .logo {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  section.container {
+    position: absolute;
+  }
+  .responsive-header {
+    position: relative;
+  }
+  nav.nav-section.active .logo {
+    display: none;
+  }
 }
