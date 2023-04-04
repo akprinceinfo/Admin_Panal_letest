@@ -189,6 +189,7 @@ hr.devider {
 
 .porfile-content .name-ditels {
   color: var(--text-color);
+  width: 7rem;
 }
 
 nav.nav-section.active .menu-item li span {
@@ -215,8 +216,7 @@ nav.nav-section.active .logo h2 {
 }
 
 nav.nav-section.active .logo .responsive_icon {
-  /* transform: translateY(-42px); */
-  display: contents;
+  transform: translateY(0px);
 }
 
 nav.nav-section.active .logo img {
