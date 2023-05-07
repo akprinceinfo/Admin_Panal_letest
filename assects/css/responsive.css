@@ -120,11 +120,8 @@
   nav.nav-section.active .logo {
     display: none;
   }
+  .nav-section {
+    -ms-overflow-style: none;
+    position: absolute;
+  }
 }
-
-/* span.responsive_icon {
-	transform: translate(0px, -15px);
-	height: 25px;
-	display: flex;
-  @media only screen and (max-width: 1024px)
-} */
