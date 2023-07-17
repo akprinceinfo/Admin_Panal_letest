@@ -1,11 +1,11 @@
 // this is owl - carousel js 
 
 $('.owl-carousel').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 10,
 
     items: 3,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 2000,
     responsive: {
         0: {
