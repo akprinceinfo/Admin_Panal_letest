@@ -64,13 +64,6 @@
   color: #fff;
 }
 
-/* span.responsive_icon {
-    position: absolute;
-    right: 0;
-    transform: translateX(-10px);
-    display: none;
-} */
-
 /* this is nav section End */
 .menu-item {
   overflow-y: scroll;
@@ -156,14 +149,8 @@ span.roundet {
 
 .porfile {
   width: 88%;
-  /*! height: 10rem; */
-  /*! position: absolute; */
-  /*! bottom: 10px; */
-  /*! background: yellow; */
   padding: 6px 0;
   display: flex;
-  /*! position: absolute; */
-  /*! bottom: 54px; */
 }
 
 .user-changeIcone {
@@ -182,9 +169,6 @@ span.roundet {
 
 .nav-section {
   -ms-overflow-style: none;
-  /* IE and Edge */
-  /*! scrollbar-width: none; */
-  /* Firefox */
 }
 
 .nav-devider {
@@ -311,8 +295,11 @@ header {
   min-height: 15vh;
   background: #1f2128;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 15px 30px;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
 }
 
 /* ----------------- 
@@ -321,7 +308,7 @@ header {
 
 .header-left {
   height: 100%;
-  min-width: 65%;
+  min-width: 55%;
   display: flex;
   flex-direction: column;
   color: var(--header-color);
@@ -330,9 +317,9 @@ header {
 }
 
 .header-right {
-  min-width: 35%;
+  /* min-width: 43%; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   padding-right: 20px;
 }
@@ -371,8 +358,9 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  gap: 13px;
+  gap: 15px;
   align-items: end;
+  margin-right: 15px;
 }
 
 .header-notefechation .notefechation {
@@ -427,13 +415,25 @@ header {
 .contents-section {
   display: flex;
   background-color: #1f2128;
+  overflow-y: scroll;
+  height: 100vh;
+  position: relative;
+  top: 7rem;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.contents-section::-webkit-scrollbar {
+  display: none;
 }
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.contents-section {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 /* contents-left Section */
 .contents-left {
   min-width: 65%;
-  height: 100vh;
-  background-color: #ff754c;
+  height: auto;
   padding: 2% 1%;
 }
 
@@ -446,14 +446,9 @@ header {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  border-radius: 15px;
 }
 
-/* contents-right Section */
-.contents-right {
-  min-width: 35%;
-  height: 100vh;
-  background-color: aqua;
-}
 /* contents-left  */
 span.google-analytics-closeButton i {
   text-align: right;
@@ -462,6 +457,7 @@ span.google-analytics-closeButton i {
   padding: 7px;
   border-radius: 50%;
   transition: all 0.4s;
+  cursor: pointer;
 }
 span.google-analytics-closeButton i:hover {
   background-color: red;
@@ -485,7 +481,9 @@ span.google-analytics-closeButton i:hover {
 .google-analytics-section {
   display: flex;
 }
-
+.contents-left-top-text {
+  padding-left: 2rem;
+}
 .contents-left-top-text h2 {
   width: 80%;
   color: #fff;
@@ -512,4 +510,182 @@ span.google-analytics-closeButton i {
   position: absolute;
   right: 6px;
   top: 5px;
+}
+/* ------------------------------------ */
+
+/* --------------------End-------------- */
+/* --------------------Bottem Start-------------- */
+
+.contents-left-bottom {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.contents-left-bottom-left h3 {
+  color: #fff;
+  font-weight: 400;
+  padding-top: 10%;
+}
+
+ul.earning-list li {
+  width: 100%;
+  height: 50px;
+  margin: 48px 0;
+}
+
+ul.earning-list li a {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #fff;
+}
+
+.earning-list-text h1 {
+  font-weight: 500;
+  padding-top: 7px;
+}
+
+.earning-list-text p {
+  font-weight: 200;
+  color: var(--text-color);
+}
+
+.earning-list-icone i {
+  padding-top: 8px;
+}
+
+.contents-left-bottom-left {
+  min-width: 305px;
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  padding: 0 3%;
+  background-color: #242731;
+  border-radius: 16px;
+}
+
+/* --------------------Bottem End-------------- */
+/* earning-grap-chart */
+
+.contents-left-bottom-right {
+  background-color: var(--primary-color);
+  width: 305px;
+  height: 400px;
+  padding: 15px;
+  border-radius: 16px;
+}
+
+.earning {
+  width: 298px;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+.earning-grap-chart {
+  background: #242731;
+  color: #ffffff;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.earning-grap-chart input {
+  padding: 15px 65px;
+  font-size: 16px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 16px;
+  color: #fff;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.earning-header h3 {
+  padding: 10px 0px 40px 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+span.earning-list-icone {
+  display: flex;
+  align-items: center;
+}
+
+/* --------------------End-------------- */
+
+/* contents-left-bottom */
+/* contents-right Section */
+.contents-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 35%;
+  height: auto;
+}
+
+.contents-right-top {
+  background-color: #242731;
+  padding: 32px 42px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 14px 21px -6px rgba(0, 0, 0, 1);
+  max-width: 20rem;
+  border-radius: 15px;
+}
+
+.contents-right-top h6 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contents-right-top p {
+  color: var(--text-color);
+  padding: 25px 0;
+}
+
+.contents-right-top button {
+  padding: 18px 43px 18px 44px;
+  background: #1f2128;
+  border-radius: 16px;
+  color: #6c5dd3;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.contents-right-top button:hover {
+  background: var(--primary-color);
+  color: var(--hover-texi-color);
+  transition: var(--trans-dura);
+}
+
+.contents-right-top h2 {
+  font-size: 65px;
+  font-weight: 500;
+  color: #6c5dd3;
+  padding: 2px 0px;
+}
+.contents-right-bottom {
+  padding-top: 20px;
+}
+.contents-right-bottom h6 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contents-right-bottom.row {
+  padding: 10px 10px;
+  width: 310px;
+  height: 365px;
+}
+canvas#bar-chart-grouped {
+  max-width: 20rem;
 }
